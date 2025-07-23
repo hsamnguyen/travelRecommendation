@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-links">
+      <a href="#index.html">Home</a>
+      <a href="travel_about.html">About Us</a>
+      <a href="travel_contact.html">Contact Us</a>
+    </div>
+    <div class="navbar-search">
+      <input type="text" id="searchInput" placeholder="Search recommendations...">
+      <button class="search-btn" onclick="searchRecommendations()">Search</button>
+      <button class="reset-btn" onclick="resetResults()">Reset</button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1>Travel Recommendations</h1>
+    <p>Find the best destinations tailored to your style of travel.</p>
+    <div id="results"></div>
+  </div>
+
+  <script src="./travel_recommendation.js"></script>
+
+</body>
+</html>
